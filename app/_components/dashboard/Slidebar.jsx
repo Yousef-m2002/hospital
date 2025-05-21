@@ -13,7 +13,8 @@ import {
   FaChevronLeft,
   FaUserCircle,
   FaUser ,
-  FaUserGraduate 
+  FaUserInjured,
+  FaRegClipboard
 } from 'react-icons/fa';
 import { RiDashboardFill } from 'react-icons/ri';
 
@@ -49,12 +50,12 @@ const Sidebar = () => {
   const navItems = [
     { path: '/dashboard/profile', icon: <RiDashboardFill />, label: 'الملف الشخصي' },
     { path: '/dashboard/employee', icon: <FaUser  />, label: 'الموظفين' },
-    
-   
+    { path: '/dashboard/patient', icon: <FaUserInjured   />, label: 'المرضى' },
+    { path: '/dashboard/reservation', icon: <FaRegClipboard   />, label: 'الحجوزات' },       
   ];
 
   return (
-    <div dir='rtl' className="font-sans fixed">
+    <div dir='rtl' className="font-sans fixed bg-[#376c8913]">
       {/* Mobile Toggle Button */}
       <button
         onClick={toggleSidebar}

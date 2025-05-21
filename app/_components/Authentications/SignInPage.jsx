@@ -48,9 +48,9 @@ export default function SignInPage() {
           window.dispatchEvent(new Event("userLoggedIn")); 
         }
 
-      setSuccessMessage("✅ Login successful! You will be redirected...");
+      // setSuccessMessage("✅ Login successful! You will be redirected...");
 
-        router.push("/");
+        router.push("/dashboard");
       } else {
         setError(data.message || "خطأ في تسجيل الدخول.");
       }
